@@ -35,7 +35,7 @@ gap: 2rem;
 
 }
 nav a{
-    color: rgba(0, 0, 0, 0.762);
+    color: rgba(255, 0, 0, 0.687);
     text-decoration: nome;
     transition: opacity 0.3s;
     font-weight: 500;
@@ -188,10 +188,10 @@ text-align: center;
 
 }
 footer {
+    margin-top: -3px;
     text-align: center;
     padding: 2rem;
-    background: #fffefe;
-    margin-top: -3px;
+    background:#d9d7f028 
 }
 #tabelavoluntarios table {
 width: 100%;
@@ -236,6 +236,138 @@ color: #2e15ea;
 }
 
 body {
-  background-image: url('');
-  background-repeat: no-repeat;
+  background:#d9d7f077
+}
+
+/* Estilo para o novo botão de cadastro */
+.btn-cadastro {
+    display: inline-block; /* Faz com que o link se comporte como bloco, permitindo padding */
+    background-color: #FF6347; /* Cor de fundo do botão (ex: Tomate) */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Preenchimento interno */
+    text-decoration: none; /* Remove o sublinhado padrão de links */
+    border-radius: 5px; /* Cantos arredondados */
+    margin-top: 20px; /* Espaço acima do botão */
+    font-weight: bold;
+    transition: background-color 0.3s; /* Transição suave para o efeito hover */
+}
+
+/* Efeito ao passar o mouse */
+.btn-cadastro:hover {
+    background-color: #e55335; /* Uma cor um pouco mais escura ao passar o mouse */
+}/* Estilo para o novo botão de cadastro */
+.btn-cadastro {
+    display: inline-block; /* Faz com que o link se comporte como bloco, permitindo padding */
+    background-color: #FF6347; /* Cor de fundo do botão (ex: Tomate) */
+    color: white; /* Cor do texto */
+    padding: 10px 20px; /* Preenchimento interno */
+    text-decoration: none; /* Remove o sublinhado padrão de links */
+    border-radius: 5px; /* Cantos arredondados */
+    margin-top: 20px; /* Espaço acima do botão */
+    font-weight: bold;
+    transition: background-color 0.3s; /* Transição suave para o efeito hover */
+}
+
+/* Efeito ao passar o mouse */
+.btn-cadastro:hover {
+    background-color: #e55335; /* Uma cor um pouco mais escura ao passar o mouse */
+}
+
+/* Centraliza o botão de envio no final do formulário */
+.form-submit {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Estilo do botão de envio */
+.submit-btn {
+    background-color: #853ae0; /* Verde */
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #ea040095; /* Verde mais escuro no hover */
+}
+
+
+/* Estilos da Seção de Portfólio (Imagens) */
+.portfolio {
+    padding: 50px 20px;
+    text-align: center;
+     background:#d9d7f028 ; /* Fundo branco para contrastar com o body */
+}
+
+.portfolio h2 {
+    color: #f5000090;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+/* Container para alinhar as imagens */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espaço entre as imagens */
+    margin-bottom: 30px;
+}
+
+/* Estilo de cada item da galeria */
+.gallery-item {
+    width: 100%; /* Largura total em telas pequenas */
+    max-width: 300px; /* Largura máxima em telas maiores */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px); /* Efeito sutil ao passar o mouse */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 200px; /* Altura fixa para uniformidade */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    display: block;
+}
+
+.caption {
+    padding: 15px 10px;
+    background-color: #ffffff;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Estilo para um botão secundário abaixo da galeria */
+.btn-secundario {
+    display: inline-block;
+    background-color: #e81a1a; /* Cor azul secundária */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-secundario:hover {
+    background-color: #be1515;
+}
+
+/* Media Query para telas maiores (desktop) */
+@media (min-width: 768px) {
+    .gallery-item {
+        width: calc(33.333% - 20px); /* 3 imagens por linha */
+    }
+      
 }

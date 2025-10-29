@@ -1,3 +1,4 @@
+Cadastro
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -30,60 +31,54 @@
     <main>
         <section class="signup-section">
             <h2>Cadastro de Voluntários</h2>
-           <div class="sucess-message" id="sucessmessage"> 
-                  Cadastro realizado com sucesso
-           </div>
-           <form id="Voluntaform" onsubmit="handlesumit (event)">
-           <fieldset>
-            <legend>Digite seus dados</legend>
-            <div class="Form-group">
-                <label for="nome">Nome completo *</label>
-                <input type="text" id-=" nome" name="nome" required>
+          <div class="success-message" id="successMessage">
+                ✅ Cadastro realizado com sucesso! Entraremos em contato em breve.
             </div>
-
-            <div class="Form-group">
-                <label for="telefone">Telefone *</label>
-                <input type="number" id="telefone" name= "telefone" placeholder="(11)964512944" required>
-            </div>
-
-        <div class="Form-group">
-                <label for="Idade">Idade *</label>
-                <input type="number" id="Idade" name= "Idade"  min= 18 max="75 " required >
-            </div>
-
-        
-           
-
-
-
-           </fieldset>
-           
-           <fieldset>
-            <legend>Tem disponibilidade</legend>
-            <div class="Form-group">
-                <label for="disponibilidade">Quando está disponivel?</label>
-                <select id="disponibilidade" name ="disponibilidade">
-                    <option value="">Selecione:</option>
-                    <option value="Final-de-semana" >Final de semana</option>
-                    <option value="Dias-ulteis">Dias ulteis</option>
-                    <option value="Flexivel">Flexivél</option>
-                    <option value="Feriados">Feriados</option>
-                </select>
-
-            </div>
-           </fieldset>
-           
-
-
-
-           </form>
-        </section>
-    </main>
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Organização de Voluntários. Todos os direitos reservados.</p>
-    <p>Feito com &#10084;&#65039; para transformar vidas</p>
-    </footer>
-    <script src="script.js"></script>
-</body>
-</html>
+            <form id="volunteerForm" onsubmit="handleSubmit(event)">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <div class="form-group">
+                        <label for="nome">Nome Completo *</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone *</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-63598" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="idade">Idade *</label>
+                        <input type="number" id="idade" name="idade" min="16" max="100" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Disponibilidade</legend>
+                    <div class="form-group">
+                        <label for="disponibilidade">Quando você pode ajudar? *</label>
+                        <select id="disponibilidade" name="disponibilidade" required>
+                            <option value="">Selecione...</option>
+                            <option value="fins-de-semana">Fins de semana</option>
+                            <option value="dias-uteis">Dias úteis</option>
+                            <option value="flexivel">Horário flexível</option>
+                            <option value="pontual">Ações pontuais</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="area-interesse">Área de Interesse *</label>
+                        <select id="area-interesse" name="area-interesse" required>
+                            <option value="">Selecione...</option>
+                            <option value="distribuicao-alimentos">Distribuição de Alimentos</option>
+                            <option value="educacao">Educação e Capacitação</option>
+                            <option value="saude">Apoio à Saúde</option>
+                            <option value="administrativo">Apoio Administrativo</option>
+                            <option value="qualquer">Qualquer área</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Informações Adicionais</legend>
+                    <div class="form-group">
+                        <label for="experiencia">Você já participou de ações voluntárias

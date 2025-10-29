@@ -87,6 +87,66 @@ font-weight: bold ;
     flex-wrap: wrap;
     margin-top: 2rem;
 }
+
+.btn-primary, .btn-secondary {
+
+flex: 1 1 200px;
+max-width: 250px;
+padding: 1rem 2.5rem; 
+font-weight: bold;
+border-radius: 50px;
+border:none;
+cursor: pointer;
+transition: all 0.3s ease;
+box-shadow: 0 5px 15 px rgba(241, 4, 4, 0.256);
+position: relative;
+overflow: hidden ;
+text-align: center;
+
+}
+
+.btn-primary {
+
+background: #4e0202;
+color: #ccc;
+
+}
+.btn-secondary {
+
+background: #ea1515;
+color: aqua;
+
+}
+.btn-primary:hover, .btn-secondary:hover
+{
+
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.762);
+}
+.btn-primary:after, .btn-secondary:after{
+    content: ""; 
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    background: #5a5959;
+    transform: rotate(45deg);
+    transition: all 0.5 ease;
+}
+
+.btn-primary:hover, .btn-secondary:hover:after {
+
+left: -20px;
+    top:20px
+    
+
+}
+
+
+
+
+
 form fieldset {
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -98,10 +158,82 @@ form legend{
     padding: 0.5rem;
     
 }
+form-grup {
+    margin-top: 1rem;
+}
+
+.form-label {
+display: block;
+margin-bottom: 0.5rem;
+font-weight: 500;
+
+}
+.form-group input,
+.form-group select
+.form-group textarea {
+ width: 100%;
+ padding: 0.75rem 1rem;
+ border-radius: 6px;
+ border:  1px solid #ccc;
+ font-size: 1rem;
 
 
+}
+.sucess-message{
+display: none;
+margin-top: 1rem;
+color: aquamarine;
+font-weight: bold;
+text-align: center;
+
+}
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #fffefe;
+    margin-top: -3px;
+}
+#tabelavoluntarios table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 1rem;
+font-family: sans-serif;
+
+}
+#tabelavoluntarios th,
+#tabelavoluntarios td{
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    text-align:  center;
+}
+#tabelavoluntarios th {
+    background-color: #5a5959;
+color: #ea1515;
+font-family: serif;
+}
+
+#tabelavoluntarios tr:nth-child(even){
+background-color: rgb(4, 98, 98);
 
 
+}
+#tabelavoluntarios tr:hover{
+    background-color: rgb(34, 60, 60);
+}
+#tabelavoluntarios table{
+border-radius: 8px;
+overflow:  hidden;
+box-shadow:  0 2px 8px rgba(173, 15, 230, 0.3);
+
+
+}
+#tabelavoluntarios p{
+text-align: center;
+font-weight: 500;
+color: #2e15ea;
+
+
+}
 
 body {
   background-image: url('');

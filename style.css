@@ -371,3 +371,260 @@ body {
     }
       
 }
+
+
+
+    * Esconde a lista de links por padrão */
+    #menu-links.hidden {
+        display: none;
+    }
+    
+    /* Estilos básicos para a lista e itens (opcional, para visualização) */
+    #menu-links {
+        list-style: none; /* Remove os marcadores de lista */
+        padding: 0;
+        margin: 0;
+        border: 1px solid #ccc;
+        position: absolute; /* Para aparecer "por cima" de outros elementos */
+        background-color: white;
+        z-index: 1000;
+    }
+    
+    #menu-links li a {
+        display: block;
+        padding: 10px 15px;
+        text-decoration: none; /* Remove sublinhado dos links */
+        color: #333;
+    }
+
+    #menu-links li a:hover {
+        background-color: #f0f0f0;
+    }
+
+    /* Estilo básico para o botão */
+    .menu-toggle {
+        cursor: pointer;
+        font-size: 24px;
+        padding: 5px 10px;
+        background: none;
+        border: none;
+    }
+
+
+
+
+  
+/* =================================================== */
+/* 1. Reset e Estilos Globais */
+/* =================================================== */
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5; 
+    color: #333;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); 
+}
+
+h1 {
+    color: #e81a1a7e; /* Azul principal */
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 2em;
+}
+
+h2 {
+    color: #3c4043;
+    font-size: 1.5em;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 5px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+/* =================================================== */
+/* 2. Estilos do Formulário e Inputs */
+/* =================================================== */
+
+.formulario-doacao section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f7f9fc;
+    border-left: 5px solid #1a73e8; 
+    border-radius: 8px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #5f6368;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="number"], 
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box; 
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus {
+    border-color: #1a73e8;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.2);
+}
+
+/* Radio Buttons (Métodos de Pagamento) */
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #1a73e8;
+}
+
+fieldset div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+fieldset div:hover {
+    background-color: #e8f0fe;
+}
+
+input[type="radio"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+/* Layout dos campos de cartão */
+.campos-cartao-linha {
+    display: flex;
+    gap: 20px;
+}
+
+/* Botão de Finalizar Doação */
+button[type="submit"] {
+    background-color: #008000; 
+    color: white;
+    padding: 18px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+    background-color: #006400; 
+}
+
+/* Botão de Copiar PIX */
+.btn-pix {
+    background-color: #f7931b !important; /* Cor do PIX */
+}
+.btn-pix:hover {
+    background-color: #e67e00 !important;
+}
+
+/* =================================================== */
+/* 3. Responsividade */
+/* =================================================== */
+
+@media (max-width: 600px) {
+    main {
+        margin: 20px 10px;
+        padding: 15px;
+    }
+    .campos-cartao-linha {
+        flex-direction: column; /* Empilha os campos em telas menores */
+        gap: 0;
+    }
+}
+
+
+
+
+
+/* --- CSS Essencial para o Menu Toggle Funcionar --- */
+
+/* Esconde o botão toggle em telas grandes (desktop) */
+.menu-toggle {
+    display: none;
+}
+
+/* Estilo Padrão para o Menu (Como ele deve se comportar 
+  em dispositivos móveis, antes de ser clicado) 
+*/
+@media (max-width: 768px) {
+    /* Mostra o botão toggle em telas pequenas */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        /* Adicione estilos de tamanho e cor para o botão aqui */
+    }
+    
+    /* Configura o menu para telas pequenas: */
+    #navMenu {
+        /* Posição e aparência para o menu que está escondido */
+        position: absolute;
+        top: 100%; /* Coloca abaixo do cabeçalho */
+        left: 0;
+        width: 100%;
+        display: none; /* ESCONDE o menu por padrão */
+        flex-direction: column;
+        background-color: #333; /* Cor de fundo para o menu fechado */
+        z-index: 100;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* O que o JavaScript faz: 
+      Quando o botão é clicado, ele adiciona a classe .open ao #navMenu, 
+      fazendo-o aparecer.
+    */
+    #navMenu.open {
+        display: flex; /* MOSTRA o menu quando a classe 'open' é adicionada */
+    }
+    
+    /* Estilo dos itens da lista no menu móvel */
+    #navMenu li a {
+        display: block;
+        padding: 15px 20px;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+    }
+}

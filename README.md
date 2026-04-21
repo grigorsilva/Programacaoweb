@@ -16,11 +16,11 @@ Esta entrega focou na criação da estrutura base do site e na consolidação da
 ### Entregáveis da Fase Atual:
 
 * **Página Inicial (`index.html`):** Estrutura completa com navegação, seção `Hero`, `Sobre Nós` e `Galeria de Ações`.
-* **Navegação Responsiva:** Implementação de um menu *toggle* (via JavaScript) para dispositivos móveis.
+  Navegação Responsiva: Implementação de um menu *toggle* (via JavaScript) para dispositivos móveis.
 * **Conteúdo Institucional:** Detalhamento da Missão, Valores e Áreas de Atuação (Educação, Assistência Social e Cultura).
 * **Links de Ação:** Botões diretos para Cadastro de Voluntários e Doações (`cadastro.html` e `doacao.html`).
 
-* **[SEU NOME COMPLETO]** - [Link do seu GitHub]( https://github.com/grigorsilva ) | [Link do seu LinkedIn]( # )
+* **[Grigor Oliveira da Silva]** - [Link do GitHub]( https://github.com/grigorsilva ) | [Link do seu LinkedIn]( # )
 
 ## 📜 Licença
 
